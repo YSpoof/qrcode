@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@media (display-mode: standalone) {
+  #install-button,
+  #install-text {
+    display: none;
+  }
+}
+@utility pixelated {
+  image-rendering: pixelated;
+}
