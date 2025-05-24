@@ -9,22 +9,20 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "lint": "eslint src --fix"
   },
   "dependencies": {
-    "vue": "^3.5.14",
-    "vue-router": "^4.5.1",
     "@tailwindcss/vite": "^4.1.7",
     "qrcode": "^1.5.4",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.7",
+    "vue": "^3.5.14",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.15.19",
     "@types/qrcode": "^1.5.5",
     "@vitejs/plugin-vue": "^5.2.4",
-    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/tsconfig": "^0.7.0",
     "daisyui": "^5.0.35",
@@ -32,14 +30,10 @@
     "eslint-plugin-vue": "~10.1.0",
     "jiti": "^2.4.2",
     "npm-run-all2": "^8.0.2",
-    "prettier": "3.5.3",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
     "vite-plugin-pwa": "^1.0.0",
     "vite-plugin-vue-devtools": "^7.7.6",
     "vue-tsc": "^2.2.10"
-  },
-  "trustedDependencies": [
-    "@tailwindcss/oxide"
-  ]
+  }
 }
