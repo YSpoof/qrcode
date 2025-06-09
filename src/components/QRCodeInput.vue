@@ -8,11 +8,11 @@
       class="sr-only">
       Digite aqui
     </label>
-    <input
+    <textarea
       id="qr-input"
-      type="text"
       v-model="value"
-      placeholder="Digite o texto ou URL..."
-      class="input w-full dark:bg-slate-700 dark:text-white" />
+      placeholder="Cole aqui sua URL ou digite qualquer texto..."
+      class="textarea textarea-bordered w-full min-h-32 resize-none focus:textarea-primary"
+      rows="4" />
   </div>
 </template>

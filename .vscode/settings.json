@@ -1,0 +1,13 @@
+{
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "./.vscode/daisyui.md"
+    },
+    {
+      "text": "Always use TypeScript."
+    }
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
