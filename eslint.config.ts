@@ -1,9 +1,4 @@
-import { globalIgnores } from "eslint/config";
-import {
-  defineConfigWithVueTs,
-  vueTsConfigs,
-} from "@vue/eslint-config-typescript";
-import pluginVue from "eslint-plugin-vue";
+import { defineConfigWithVueTs } from "@vue/eslint-config-typescript";
 
 // To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
 // import { configureVueProject } from '@vue/eslint-config-typescript'
@@ -16,8 +11,8 @@ export default defineConfigWithVueTs(
     files: ["**/*.{ts,mts,tsx,vue}"],
   },
 
-  globalIgnores(["**/dist/**", "**/dist-ssr/**", "**/coverage/**"]),
-
-  pluginVue.configs["flat/essential"],
-  vueTsConfigs.recommended
+  {
+    name: "app/global-ignores",
+    ignores: ["**/docs/**", "**/dist/**", "**/dist-ssr/**", "**/coverage/**"],
+  }
 );
