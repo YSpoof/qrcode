@@ -37,13 +37,13 @@ Para executar este projeto localmente:
 ```bash
 # Clone o repositório
 git clone https://github.com/yspoof/qrcode.git
-cd qr
+cd qrcode
 
 # Instale as dependências
-bun install
+pnpm install
 
 # Execute o servidor de desenvolvimento
-bun run dev
+pnpm run dev
 ```
 
 ## Privacidade
@@ -56,7 +56,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## TODO
 
-- [ ] Adicionar página para gerenciar QR Codes baixados, armazenando-os no localStorage.
 - [ ] Adicionar mais opções para geração de QR Codes (Wifi, Contatos, etc).
 
 ## Licença
