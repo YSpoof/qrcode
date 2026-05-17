@@ -1,0 +1,1 @@
+async function e(e,t){let n=await(await fetch(t)).blob(),r=URL.createObjectURL(n),i=document.createElement(`a`);i.href=r,i.download=e,document.body.appendChild(i),i.click(),i.remove(),URL.revokeObjectURL(r)}export{e as t};

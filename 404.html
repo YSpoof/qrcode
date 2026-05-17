@@ -1,22 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <meta
+      name="theme-color"
+      content="#000000" />
+    <link
+      rel="shortcut icon"
+      type="image/svg+xml"
+      href="/favicon.svg" />
 
     <!-- Primary Meta Tags -->
-    <title>QREncode | LZArt</title>
-    <meta name="title" content="QREncode | LZArt" />
+    <meta
+      name="title"
+      content="QREncode | LZArt" />
     <meta
       name="description"
       content="Simples, rápido, gratuito e 100% local!" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://qrcode.lzart.com.br/" />
-    <meta property="og:title" content="QREncode | LZArt" />
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:url"
+      content="https://qrcode.lzart.com.br/" />
+    <meta
+      property="og:title"
+      content="QREncode | LZArt" />
     <meta
       property="og:description"
       content="Simples, rápido, gratuito e 100% local!" />
@@ -25,19 +39,66 @@
       content="https://qrcode.lzart.com.br/pwa/wide.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://qrcode.lzart.com.br/" />
-    <meta property="twitter:title" content="QREncode | LZArt" />
+    <meta
+      property="twitter:card"
+      content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://qrcode.lzart.com.br/" />
+    <meta
+      property="twitter:title"
+      content="QREncode | LZArt" />
     <meta
       property="twitter:description"
       content="Simples, rápido, gratuito e 100% local!" />
     <meta
       property="twitter:image"
       content="https://qrcode.lzart.com.br/pwa/wide.png" />
-    <script type="module" crossorigin src="/assets/index-Cie4dwCF.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-fLcCRYlX.css">
-  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
-  <body>
-    <div id="root" class="min-h-screen min-w-screen bg-gradient-to-br from-indigo-50 to-purple-100 dark:from-slate-900 dark:to-slate-800"></div>
+    <link rel="manifest" href="/manifest.json">
+    <link href="/_app/immutable/entry/start.Brfcuw4y.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/D5IjDMDw.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/i78Zb7kh.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.CUx5DXf5.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CHncfsjL.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DGyYqRnv.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.By3l09S_.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B-byvynr.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/9Q7MEVex.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Zd44L0Zr.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DkcSKSC7.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.B6nqib6d.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="tap">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1bjrlub = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Brfcuw4y.js"),
+						import("/_app/immutable/entry/app.CUx5DXf5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
   </body>
 </html>
